@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the Trestle Table selection of Kenyan vegetables, fruits, and pantry favourites, with example prices in Kenyan shillings.">
+  <title>Trestle Table | Fresh Kenyan Produce</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand-tools">
+      <a class="logo" href="index.html" aria-label="Greens home"><img src="images/image1.png" alt="Greens"></a>
+      <form class="site-search" role="search">
+        <label class="visually-hidden" for="siteSearch">Search Greens</label>
+        <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        <input id="siteSearch" type="search" placeholder="Find something fresh..." autocomplete="off" aria-controls="siteSearchResults">
+        <kbd aria-hidden="true">/</kbd>
+        <div class="search-results" id="siteSearchResults" role="region" aria-label="Search suggestions" aria-live="polite" hidden></div>
+      </form>
+    </div>
+    <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="about.html">About Greens</a>
+      <a href="skills.html">Our Promise</a><a href="projects.html">Produce</a>
+      <a class="active" href="trestle-table.html">Trestle Table</a>
+      <a href="services.html">For Businesses</a><a class="cta" href="contact.html">Enquire</a>
+    </nav>
+  </header>
+  <main class="page trestle-page">
+    <section class="trestle-hero" aria-labelledby="trestleTitle">
+      <div>
+        <p class="eyebrow">FRESH FROM THE MARKET, FOR YOUR TABLE</p>
+        <h1 id="trestleTitle">The Trestle <span>Table.</span></h1>
+        <p class="trestle-lead">A colourful market-style selection of everyday Kenyan greens, garden vegetables, ripe fruits, and a few pantry favourites.</p>
+        <a class="btn primary" href="#market">Browse the selection ↓</a>
+      </div>
+      <div class="trestle-hero-art" aria-hidden="true"><span>🥬</span><span>🥑</span><span>🍊</span><span>🥕</span><span>🍌</span></div>
+      <div class="market-note"><span aria-hidden="true">✳</span> Good food starts with fresh, familiar ingredients.</div>
+    </section>
+
+    <section class="market-section" id="market" aria-labelledby="marketTitle">
+      <div class="market-heading">
+        <div>
+          <p class="eyebrow">PICK YOUR PRODUCE</p>
+          <h2 id="marketTitle">A little something for every meal</h2>
+          <p>Browse by category and enquire about what you need.</p>
+        </div>
+        <span class="currency-note">Prices shown in <strong>KSh</strong></span>
+      </div>
+      <div class="market-filters" role="group" aria-label="Filter products by category">
+        <button class="market-filter active" type="button" data-filter="all" aria-pressed="true">All produce</button>
+        <button class="market-filter" type="button" data-filter="vegetables" aria-pressed="false">Vegetables</button>
+        <button class="market-filter" type="button" data-filter="fruits" aria-pressed="false">Fruits</button>
+        <button class="market-filter" type="button" data-filter="other" aria-pressed="false">Pantry &amp; more</button>
+      </div>
+      <p class="market-count" id="marketCount" aria-live="polite"></p>
+      <div class="market-grid">
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art greens-art"><span aria-hidden="true">🥬</span><small>MARKET GREENS</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Sukuma wiki</h3><span class="market-price">KSh 50 <small>/ bunch</small></span></div><p>A Kenyan kitchen staple, ready for a quick sauté.</p><a href="contact.html?product=Sukuma%20wiki">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art spinach-art"><span aria-hidden="true">🌿</span><small>LEAFY &amp; FRESH</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Spinach</h3><span class="market-price">KSh 60 <small>/ bunch</small></span></div><p>Tender green leaves for stews, sides, and smoothies.</p><a href="contact.html?product=Spinach">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art herbs-art"><span aria-hidden="true">🌱</span><small>TRADITIONAL GREENS</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Managu</h3><span class="market-price">KSh 70 <small>/ bunch</small></span></div><p>Distinctive African nightshade for a hearty traditional meal.</p><a href="contact.html?product=Managu">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art tomato-art"><span aria-hidden="true">🍅</span><small>GARDEN FAVOURITE</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Tomatoes</h3><span class="market-price">KSh 100 <small>/ kg</small></span></div><p>Juicy, versatile tomatoes for sauces, salads, and stews.</p><a href="contact.html?product=Tomatoes">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art carrots-art"><span aria-hidden="true">🥕</span><small>CRUNCHY PICK</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Carrots</h3><span class="market-price">KSh 100 <small>/ kg</small></span></div><p>Sweet crunch for lunchboxes, salads, and family dinners.</p><a href="contact.html?product=Carrots">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art roots-art"><span aria-hidden="true">🥔</span><small>EVERYDAY ESSENTIAL</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Potatoes</h3><span class="market-price">KSh 100 <small>/ kg</small></span></div><p>A filling favourite for mash, roasting, and family meals.</p><a href="contact.html?product=Potatoes">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art avocado-art"><span aria-hidden="true">🥑</span><small>CREAMY &amp; GOOD</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Avocados</h3><span class="market-price">KSh 30 <small>/ piece</small></span></div><p>Rich and creamy for toast, salads, or on the side.</p><a href="contact.html?product=Avocados">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="vegetables">
+          <div class="market-art maize-art"><span aria-hidden="true">🌽</span><small>FAMILY FAVOURITE</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Fresh maize</h3><span class="market-price">KSh 40 <small>/ cob</small></span></div><p>Sweet corn for boiling, grilling, or sharing fresh off the cob.</p><a href="contact.html?product=Fresh%20maize">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="fruits">
+          <div class="market-art banana-art"><span aria-hidden="true">🍌</span><small>FRUIT BOWL CLASSIC</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Bananas</h3><span class="market-price">KSh 120 <small>/ kg</small></span></div><p>An easy, naturally sweet snack for any time of day.</p><a href="contact.html?product=Bananas">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="fruits">
+          <div class="market-art mango-art"><span aria-hidden="true">🥭</span><small>SEASONAL SWEETNESS</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Mangoes</h3><span class="market-price">KSh 60 <small>/ piece</small></span></div><p>Fragrant, sunny fruit for slicing, blending, and sharing.</p><a href="contact.html?product=Mangoes">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="fruits">
+          <div class="market-art citrus-art"><span aria-hidden="true">🍊</span><small>JUICY &amp; BRIGHT</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Oranges</h3><span class="market-price">KSh 30 <small>/ piece</small></span></div><p>A refreshing citrus pick for breakfast or a quick snack.</p><a href="contact.html?product=Oranges">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="fruits">
+          <div class="market-art papaya-art"><span aria-hidden="true">🍈</span><small>READY TO SHARE</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Pawpaw</h3><span class="market-price">KSh 100 <small>/ piece</small></span></div><p>Soft, mellow fruit that makes a lovely breakfast bowl.</p><a href="contact.html?product=Pawpaw">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="fruits">
+          <div class="market-art watermelon-art"><span aria-hidden="true">🍉</span><small>COOL &amp; REFRESHING</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Watermelon</h3><span class="market-price">KSh 80 <small>/ kg</small></span></div><p>Fresh, juicy slices for warm afternoons and get-togethers.</p><a href="contact.html?product=Watermelon">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="other">
+          <div class="market-art eggs-art"><span aria-hidden="true">🥚</span><small>FROM THE FARM</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Farm eggs</h3><span class="market-price">KSh 450 <small>/ tray of 30</small></span></div><p>A kitchen essential for breakfast, baking, and more.</p><a href="contact.html?product=Farm%20eggs">Enquire about this →</a></div>
+        </article>
+        <article class="market-card" data-category="other">
+          <div class="market-art honey-art"><span aria-hidden="true">🍯</span><small>NATURAL GOODNESS</small></div>
+          <div class="market-card-body"><div class="market-card-title"><h3>Local honey</h3><span class="market-price">KSh 500 <small>/ 500 g</small></span></div><p>A naturally sweet pantry favourite for tea or breakfast.</p><a href="contact.html?product=Local%20honey">Enquire about this →</a></div>
+        </article>
+      </div>
+      <p class="market-disclaimer">Prices are examples for display only. Produce availability and current prices can change by season and market; please enquire to confirm.</p>
+    </section>
+    <section class="market-cta">
+      <span aria-hidden="true">🧺</span>
+      <div><h2>Have a shopping list in mind?</h2><p>Tell us what you’re looking for and the quantities you need.</p></div>
+      <a class="btn primary" href="contact.html">Make an enquiry →</a>
+    </section>
+  </main>
+  <footer>Greens · Fresh vegetables and fruits · Prices in Kenyan shillings (KSh).</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

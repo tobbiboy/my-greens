@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Greens, your friendly place to explore fresh vegetables and fruits.">
+  <title>Greens | Fresh Vegetables & Fruits</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="homepage">
+  <header class="nav">
+    <div class="brand-tools">
+      <a class="logo" href="index.html" aria-label="Greens home"><img src="images/image1.png" alt="Greens"></a>
+      <form class="site-search" role="search">
+        <label class="visually-hidden" for="siteSearch">Search Greens</label>
+        <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        <input id="siteSearch" type="search" placeholder="Find something fresh..." autocomplete="off" aria-controls="siteSearchResults">
+        <kbd aria-hidden="true">/</kbd>
+        <div class="search-results" id="siteSearchResults" role="region" aria-label="Search suggestions" aria-live="polite" hidden></div>
+      </form>
+    </div>
+    <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About Greens</a>
+      <a href="skills.html">Our Promise</a>
+      <a href="projects.html">Produce</a>
+      <a href="trestle-table.html">Trestle Table</a>
+      <a href="services.html">For Businesses</a>
+      <a class="cta" href="contact.html">Enquire</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE MORE GOODNESS, EVERY DAY</p>
+        <h1>Fresh picks.<br><span>Brighter plates.</span></h1>
+        <p class="lead">Explore a colourful selection of vegetables and fruits for everyday meals, snacks, and sharing.</p>
+        <div class="actions">
+          <a class="btn primary" href="projects.html">Explore our produce →</a>
+          <a class="btn secondary" href="contact.html">Ask about an order</a>
+        </div>
+        <div class="stats">
+          <b><img src="images/veg.jpg" alt=""><span>Vegetables<small>Everyday essentials</small></span></b>
+          <b><img src="images/fruites.jpg" alt=""><span>Fruits<small>Colourful favourites</small></span></b>
+          <b><img src="images/all.jpg" alt=""><span>For all<small>Home or business</small></span></b>
+        </div>
+      </div>
+    </section>
+    <section class="cards" aria-label="Shop by category">
+      <article><em>01</em><h2>Leafy greens</h2><p>Greens and salad favourites for fresh, everyday meals.</p></article>
+      <article><em>02</em><h2>Vegetables</h2><p>Versatile produce to bring colour and variety to your cooking.</p></article>
+      <article><em>03</em><h2>Fruits</h2><p>Sweet and tangy picks for snacks, breakfasts, and desserts.</p></article>
+      <article><em>04</em><h2>Order for a group</h2><p>Planning a larger order? Tell us what you need and we’ll follow up.</p></article>
+    </section>
+  </main>
+  <footer>Greens · Fresh vegetables and fruits.</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
